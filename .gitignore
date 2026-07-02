@@ -1,0 +1,190 @@
+# ================================
+# OS & Editor Files
+# ================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+.Trash-*
+.nfs*
+
+# ================================
+# IDE / Editor
+# ================================
+
+# VSCode
+.vscode/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# IntelliJ / WebStorm / PHPStorm
+.idea/
+*.iml
+*.iws
+*.ipr
+.idea_modules/
+out/
+.settings/
+.project
+.classpath
+.factorypath
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Atom
+.atom/
+
+# Vim
+*.swp
+*.swo
+*~
+*.un~
+
+# ================================
+# Node.js & NPM
+# ================================
+
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+.pnpm-debug.log*
+
+# ================================
+# Build & Production
+# ================================
+
+dist/
+build/
+out/
+*.min.js
+*.min.css
+*.map
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ================================
+# Temporary Files
+# ================================
+
+*.tmp
+*.temp
+*.log
+logs/
+*.pid
+*.seed
+*.pid.lock
+
+# ================================
+# Project Specific
+# ================================
+
+# Gambar screenshot asli (jika ada backup di folder terpisah)
+assets/backup/
+screenshots-original/
+
+# File desain
+*.psd
+*.ai
+*.sketch
+*.fig
+*.xd
+
+# Backup files
+*.bak
+*.old
+*.orig
+
+# ================================
+# Vercel / Deployment
+# ================================
+
+.vercel
+vercel.json
+.vercelignore
+
+# ================================
+# Dependencies
+# ================================
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Ruby
+*.gem
+*.rbc
+/.config
+/.yardoc
+_build/
+_coverage/
+_site/
+.ruby-version
+
+# PHP
+composer.phar
+/vendor/
+composer.lock
+
+# ================================
+# Other
+# ================================
+
+# Database
+*.sqlite
+*.db
+*.sql
+
+# Cache
+.cache/
+*.cache
+
+# Coverage
+coverage/
+.nyc_output/
+
+# Docker
+docker-compose.override.yml
+*.dockerignore
+
+# Secrets
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx

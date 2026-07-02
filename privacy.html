@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kebijakan Privasi - Saku Arlain</title>
+    <meta name="description" content="Kebijakan Privasi Saku Arlain - Aplikasi Keuangan Digital Terpercaya">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* ===== PRIVACY PAGE STYLES ===== */
+        .privacy-wrapper {
+            max-width: 820px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .privacy-card {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 40px 48px;
+            box-shadow: 0 4px 24px rgba(33, 150, 243, 0.08);
+            border: 1px solid #e3f2fd;
+        }
+
+        /* Back Button */
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: #1565C0;
+            font-weight: 500;
+            font-size: 14px;
+            padding: 10px 20px;
+            background: #e3f2fd;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            margin-bottom: 28px;
+            text-decoration: none;
+        }
+
+        .back-button:hover {
+            background: #bbdefb;
+            transform: translateX(-4px);
+        }
+
+        .back-button i {
+            font-size: 14px;
+            transition: transform 0.3s;
+        }
+
+        .back-button:hover i {
+            transform: translateX(-4px);
+        }
+
+        /* Header */
+        .privacy-header {
+            margin-bottom: 32px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #e3f2fd;
+        }
+
+        .privacy-header h1 {
+            font-size: 32px;
+            font-weight: 800;
+            color: #0d47a1;
+            margin-bottom: 6px;
+        }
+
+        .privacy-header .last-updated {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #5c6bc0;
+            font-size: 14px;
+        }
+
+        .privacy-header .last-updated i {
+            font-size: 14px;
+        }
+
+        /* Intro */
+        .privacy-intro {
+            background: #f5f9ff;
+            padding: 20px 24px;
+            border-radius: 12px;
+            border-left: 4px solid #1a73e8;
+            margin-bottom: 30px;
+        }
+
+        .privacy-intro p {
+            color: #1a237e;
+            font-size: 15px;
+            line-height: 1.8;
+            margin: 0;
+        }
+
+        .privacy-intro strong {
+            color: #0d47a1;
+        }
+
+        /* Sections */
+        .privacy-section {
+            margin-bottom: 28px;
+            padding: 20px 24px;
+            background: #fafcff;
+            border-radius: 12px;
+            border: 1px solid #e8f0fe;
+        }
+
+        .privacy-section h2 {
+            font-size: 17px;
+            font-weight: 700;
+            color: #0d47a1;
+            margin: 0 0 10px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .privacy-section h2 i {
+            font-size: 18px;
+            color: #1a73e8;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #e3f2fd;
+            border-radius: 8px;
+        }
+
+        .privacy-section p {
+            color: #1a237e;
+            font-size: 15px;
+            line-height: 1.8;
+            margin: 0 0 10px 0;
+            padding-left: 42px;
+        }
+
+        .privacy-section ul {
+            margin: 8px 0 0 42px;
+            color: #1a237e;
+            font-size: 15px;
+            line-height: 2;
+            list-style: none;
+            padding: 0;
+        }
+
+        .privacy-section ul li {
+            padding: 2px 0 2px 24px;
+            position: relative;
+        }
+
+        .privacy-section ul li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            top: 2px;
+            color: #1a73e8;
+            font-weight: 700;
+        }
+
+        .privacy-section .note {
+            padding-left: 42px;
+            margin-top: 8px;
+            color: #5c6bc0;
+            font-style: italic;
+            font-size: 14px;
+        }
+
+        /* Contact */
+        .contact-section {
+            background: #f5f9ff;
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin-top: 8px;
+            border: 1px solid #e3f2fd;
+        }
+
+        .contact-section h3 {
+            font-size: 15px;
+            font-weight: 700;
+            color: #0d47a1;
+            margin: 0 0 12px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .contact-section h3 i {
+            font-size: 16px;
+            color: #1a73e8;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 14px;
+            background: white;
+            border-radius: 10px;
+            border: 1px solid #e3f2fd;
+        }
+
+        .contact-item i {
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #e3f2fd;
+            border-radius: 8px;
+            color: #1a73e8;
+            font-size: 14px;
+            flex-shrink: 0;
+        }
+
+        .contact-item .contact-label {
+            font-size: 11px;
+            font-weight: 600;
+            color: #5c6bc0;
+            text-transform: uppercase;
+        }
+
+        .contact-item .contact-value {
+            font-size: 13px;
+            font-weight: 500;
+            color: #0d47a1;
+        }
+
+        /* Footer */
+        .privacy-footer {
+            margin-top: 28px;
+            padding-top: 20px;
+            border-top: 2px solid #e3f2fd;
+            text-align: center;
+        }
+
+        .privacy-footer p {
+            color: #5c6bc0;
+            font-size: 13px;
+            margin: 0;
+        }
+
+        .privacy-footer a {
+            color: #1a73e8;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .privacy-footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 768px) {
+            .privacy-card {
+                padding: 24px 20px;
+            }
+
+            .privacy-header h1 {
+                font-size: 24px;
+            }
+
+            .privacy-section {
+                padding: 16px 18px;
+            }
+
+            .privacy-section p,
+            .privacy-section ul,
+            .privacy-section .note {
+                padding-left: 0;
+            }
+
+            .privacy-section h2 {
+                font-size: 15px;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .privacy-wrapper {
+                padding: 16px 12px;
+            }
+
+            .privacy-card {
+                padding: 16px 14px;
+                border-radius: 16px;
+            }
+
+            .privacy-header h1 {
+                font-size: 20px;
+            }
+
+            .privacy-intro {
+                padding: 14px 16px;
+            }
+
+            .back-button {
+                padding: 8px 14px;
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <div class="logo">
+                    <i class="fas fa-play"></i>
+                    <span>Play Store</span>
+                </div>
+                <div class="nav-links">
+                    <a href="index.html">Aplikasi</a>
+                    <a href="#">Game</a>
+                    <a href="#">Film</a>
+                    <a href="#">Buku</a>
+                </div>
+            </div>
+            <div class="nav-right">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Cari aplikasi & game" aria-label="Cari aplikasi">
+                </div>
+                <div class="profile-icon">
+                    <span>SA</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PRIVACY CONTENT -->
+    <div class="privacy-wrapper">
+        <div class="privacy-card">
+
+            <!-- Back Button -->
+            <a href="index.html" class="back-button">
+                <i class="fas fa-arrow-left"></i>
+                Kembali ke Halaman Utama
+            </a>
+
+            <!-- Header -->
+            <div class="privacy-header">
+                <h1>Kebijakan Privasi</h1>
+                <div class="last-updated">
+                    <i class="fas fa-calendar-alt"></i>
+                    Terakhir diperbarui: 2 Juli 2026
+                </div>
+            </div>
+
+            <!-- Intro -->
+            <div class="privacy-intro">
+                <p>
+                    Selamat datang di <strong>Saku Arlain</strong>. Privasi Anda adalah prioritas utama kami. 
+                    Dokumen ini menjelaskan secara transparan bagaimana kami mengumpulkan, menggunakan, 
+                    dan melindungi informasi pribadi Anda.
+                </p>
+            </div>
+
+            <!-- Section 1: Informasi yang Dikumpulkan -->
+            <div class="privacy-section">
+                <h2>
+                    <i class="fas fa-database"></i>
+                    1. Informasi yang Kami Kumpulkan
+                </h2>
+                <p>
+                    Kami mengumpulkan informasi yang Anda berikan secara langsung saat menggunakan aplikasi, 
+                    seperti data transaksi keuangan.
+                </p>
+            </div>
+
+            <!-- Section 2: Penggunaan Informasi -->
+            <div class="privacy-section">
+                <h2>
+                    <i class="fas fa-chart-pie"></i>
+                    2. Penggunaan Informasi
+                </h2>
+                <p>
+                    Informasi yang dikumpulkan digunakan untuk:
+                </p>
+                <ul>
+                    <li>Menyediakan layanan dalam aplikasi Saku Arlain</li>
+                    <li>Meningkatkan keamanan akun pengguna</li>
+                    <li>Komunikasi dan notifikasi penting dengan pengguna</li>
+                    <li>Menganalisis penggunaan aplikasi untuk pengembangan fitur</li>
+                </ul>
+            </div>
+
+            <!-- Section 3: Keamanan Data -->
+            <div class="privacy-section">
+                <h2>
+                    <i class="fas fa-lock"></i>
+                    3. Keamanan Data
+                </h2>
+                <p>
+                    Kami menggunakan standar keamanan industri untuk melindungi data pribadi Anda 
+                    dari akses yang tidak sah. Semua data dienkripsi dengan protokol keamanan terkini.
+                </p>
+            </div>
+
+            <!-- Section 4: Hak Pengguna -->
+            <div class="privacy-section">
+                <h2>
+                    <i class="fas fa-user-check"></i>
+                    4. Hak Pengguna
+                </h2>
+                <p>
+                    Sebagai pengguna Saku Arlain, Anda memiliki hak atas data pribadi Anda:
+                </p>
+                <ul>
+                    <li><strong>Hak Akses</strong> — Melihat data pribadi Anda kapan saja</li>
+                    <li><strong>Hak Perbaikan</strong> — Memperbarui data yang tidak akurat</li>
+                    <li><strong>Hak Penghapusan</strong> — Menghapus akun dan data secara permanen</li>
+                    <li><strong>Hak Pembatasan</strong> — Membatasi pemrosesan data</li>
+                </ul>
+            </div>
+
+            <!-- Section 5: Perubahan Kebijakan Privasi -->
+            <div class="privacy-section">
+                <h2>
+                    <i class="fas fa-sync-alt"></i>
+                    5. Perubahan Kebijakan Privasi
+                </h2>
+                <p>
+                    Kami dapat memperbarui kebijakan privasi ini dari waktu ke waktu. Setiap perubahan 
+                    akan diinformasikan melalui aplikasi atau email. Kami mendorong Anda untuk meninjau 
+                    kebijakan ini secara berkala untuk tetap mengetahui bagaimana kami melindungi data Anda.
+                </p>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="contact-section">
+                <h3>
+                    <i class="fas fa-headset"></i>
+                    Hubungi Kami
+                </h3>
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <div class="contact-label">Email</div>
+                            <div class="contact-value">support@saku-arlain.com</div>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <div class="contact-label">Telepon</div>
+                            <div class="contact-value">+62 812-3456-7890</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="privacy-footer">
+                <p>
+                    © 2026 <a href="index.html">Saku Arlain</a> — 
+                    Dibangun dengan <i class="fas fa-heart" style="color: #ea4335;"></i> untuk keamanan finansial Anda
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2026 Saku Arlain. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="privacy.html" style="color: #1a73e8; font-weight: 600;">Kebijakan Privasi</a>
+                <a href="#">Syarat & Ketentuan</a>
+                <a href="#">Kontak</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
